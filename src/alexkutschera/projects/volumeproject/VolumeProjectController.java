@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017. AlexKutschera
+ * 2017 Alexander Kutschera
  */
 
 package alexkutschera.projects.volumeproject;

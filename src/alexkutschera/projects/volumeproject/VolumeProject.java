@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017. AlexKutschera
+ * 2017 Alexander Kutschera
  */
 
 package alexkutschera.projects.volumeproject;
@@ -12,7 +12,9 @@ import java.io.IOException;
 public class VolumeProject extends ProjectPane {
 
     private VolumeProjectController controller;
-    private float inLength = 0, inWidth = 0, inHeight = 0, outVolume = 0;
+    private float inLength = 0;
+    private float inWidth = 0;
+    private float inHeight = 0;
 
     public VolumeProject() {
         try {
@@ -44,7 +46,7 @@ public class VolumeProject extends ProjectPane {
     }
 
     private void calculate() {
-        outVolume = inLength * inWidth * inHeight;
+        float outVolume = inLength * inWidth * inHeight;
         controller.out_volume.setText(String.valueOf(outVolume));
     }
 
