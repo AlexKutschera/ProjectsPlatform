@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2017. AlexKutschera
+  -->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" hgap="8.0" vgap="8.0"
+          xmlns="http://javafx.com/javafx/8.0.121"
+          fx:controller="alexkutschera.projects.volumeproject.VolumeProjectControler">
+    <columnConstraints>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
+    </padding>
+    <Label text="Breite" GridPane.rowIndex="1"/>
+    <Label text="Länge"/>
+    <Label text="Höhe" GridPane.rowIndex="2"/>
+    <Label text="Volumen" GridPane.rowIndex="3"/>
+    <TextField text="0" GridPane.columnIndex="1"/>
+    <TextField text="0" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField text="0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="0" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="cm" GridPane.columnIndex="2"/>
+    <Label text="cm" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+    <Label text="cm" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    <Label text="cm³" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+</GridPane>

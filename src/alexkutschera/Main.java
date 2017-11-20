@@ -4,7 +4,7 @@
 
 package alexkutschera;
 
-import alexkutschera.projects.SampleProject.SampleProject;
+import alexkutschera.projects.sampleproject.SampleProject;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
