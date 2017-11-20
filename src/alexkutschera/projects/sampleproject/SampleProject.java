@@ -16,9 +16,6 @@ import java.io.IOException;
 public class SampleProject extends ProjectPane {
 
     private SampleProjectController controller;
-    private float inLength = 0;
-    private float inWidth = 0;
-    private float inHeight = 0;
 
     public SampleProject() {
         try {
