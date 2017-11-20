@@ -5,6 +5,16 @@
     -fx-font-family: sans-serif;
 }
 
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 0;
+}
+
+#projects_search, #projects_list {
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #d3d3d3;
+}
+
 .list-cell {
     -fx-background-color: #FFFFFF;
     -fx-padding: 8px;
