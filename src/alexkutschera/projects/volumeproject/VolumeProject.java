@@ -22,7 +22,7 @@ public class VolumeProject extends ProjectPane {
 
             controller.in_length.textProperty().addListener((observable, oldValue, newValue) -> {
                 if (newValue.matches("[-+]?[0-9]*\\.?[0-9]+")) {
-                    inHeight = Float.parseFloat(newValue);
+                    inLength = Float.parseFloat(newValue);
                     calculate();
                 }
             });
