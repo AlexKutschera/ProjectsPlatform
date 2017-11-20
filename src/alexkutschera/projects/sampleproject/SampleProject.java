@@ -2,19 +2,37 @@
  * 2017 Alexander Kutschera
  */
 
+/*
+ * 2017 Alexander Kutschera
+ */
+
 package alexkutschera.projects.sampleproject;
 
 import alexkutschera.ProjectPane;
-import javafx.scene.control.Label;
+import javafx.fxml.FXMLLoader;
+
+import java.io.IOException;
 
 public class SampleProject extends ProjectPane {
 
+    private SampleProjectController controller;
+    private float inLength = 0;
+    private float inWidth = 0;
+    private float inHeight = 0;
+
     public SampleProject() {
-        this.getChildren().add(new Label("Test"));
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("sampleproject.fxml"));
+            this.getChildren().add(loader.load());
+            controller = loader.getController();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public String getTitle() {
-        return "SAMPLE";
+        return "Sample";
     }
+
 }
