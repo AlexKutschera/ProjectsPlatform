@@ -6,14 +6,6 @@
  * 2017 Alexander Kutschera
  */
 
-/*
- * 2017 Alexander Kutschera
- */
-
-/*
- * 2017 AlexKutschera
- */
-
 package alexkutschera.projects.sampleproject;
 
 import alexkutschera.ProjectPane;
