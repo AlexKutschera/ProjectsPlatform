@@ -1,13 +1,8 @@
-/*
- * 2017 Alexander Kutschera
- */
 
 /*
  * 2017 Alexander Kutschera
  */
-
-package alexkutschera.projects.sampleproject;
-
+package alexkutschera.projects.SampleProject;
 import alexkutschera.ProjectPane;
 import javafx.fxml.FXMLLoader;
 
@@ -15,7 +10,7 @@ import java.io.IOException;
 
 public class SampleProject extends ProjectPane {
 
-    private SampleProjectController controller;
+    public alexkutschera.projects.SampleProject.SampleProjectController controller;
 
     public SampleProject() {
         try {
