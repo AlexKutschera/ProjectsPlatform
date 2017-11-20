@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) 2017. AlexKutschera
+ */
+* {
+    -fx-font-family: sans-serif;
+}
+
+.list-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 8px;
+}
+
+.list-cell:selected {
+    -fx-background-color: #d3d3d3;
+    -fx-text-fill: #000000;
+}
+
+#projects_list, #projects_search {
+    -fx-pref-width: 250px;
+}
