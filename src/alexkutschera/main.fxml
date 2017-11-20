@@ -20,7 +20,7 @@
                 <RowConstraints/>
                 <RowConstraints/>
             </rowConstraints>
-            <TextField fx:id="projects_search" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" promptText="Suchen">
+            <TextField fx:id="projects_search" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" promptText="Suchen" style="-fx-background-color: cornflowerblue">
                 <padding>
                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
                 </padding>

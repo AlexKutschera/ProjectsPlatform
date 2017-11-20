@@ -2,7 +2,7 @@
 /*
  * 2017 Alexander Kutschera
  */
-package alexkutschera.projects.SampleProject;
+package alexkutschera.projects.sampleproject;
 import alexkutschera.ProjectPane;
 import javafx.fxml.FXMLLoader;
 
@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class SampleProject extends ProjectPane {
 
-    public alexkutschera.projects.SampleProject.SampleProjectController controller;
+    public alexkutschera.projects.sampleproject.SampleProjectController controller;
 
     public SampleProject() {
         try {
