@@ -4,11 +4,11 @@
 
 package alexkutschera;
 
-import alexkutschera.projects.EmptyProject.EmptyProject;
 import alexkutschera.projects.SampleProject.SampleProject;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -20,15 +20,15 @@ public class Main extends Application {
     private static MainController controller;
 
     private static ObservableList<ProjectPane> projectPanes = FXCollections.observableArrayList();
+    private static FilteredList<ProjectPane> filtedProjectPanes = new FilteredList<>(projectPanes);
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-        // Init Projects and add to Projects list
+        // init projects and add to projects list
         projectPanes.add(new SampleProject()); //TODO remove or replace with another Project
-        projectPanes.add(new EmptyProject()); //TODO remove or replace with another Project
 
-        // Init GUI
+        // init GUI
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
         Parent root = loader.load();
         controller = loader.getController();
@@ -37,7 +37,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
-        // Init Projects List
+        // init projects list
         controller.projects_list.setCellFactory(param -> new ListCell<ProjectPane>() {
             @Override
             protected void updateItem(ProjectPane item, boolean empty) {
@@ -54,7 +54,10 @@ public class Main extends Application {
                 }
             }
         });
-        controller.projects_list.setItems(projectPanes);
+        controller.projects_list.setItems(filtedProjectPanes);
+
+        // init search
+        controller.projects_search.textProperty().addListener((observable, oldValue, newValue) -> filtedProjectPanes.setPredicate(projectPane -> projectPane.getTitle().toLowerCase().contains(newValue.toLowerCase())));
     }
 
 
