@@ -5,6 +5,7 @@
 package alexkutschera;
 
 import alexkutschera.projects.SampleProject.SampleProject;
+import alexkutschera.projects.VolumenGui.VolumenGui;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -26,7 +27,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         // init projects and add to projects list
-        projectPanes.add(new SampleProject()); //TODO remove or replace with another Project
+        projectPanes.add(new SampleProject());//TODO remove or replace with another Project
+        projectPanes.add(new VolumenGui());
 
         // init GUI
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
