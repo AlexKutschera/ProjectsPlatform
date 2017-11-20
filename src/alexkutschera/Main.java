@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2017. AlexKutschera
+ */
+
 package alexkutschera;
 
 import alexkutschera.projects.EmptyProject.EmptyProject;
