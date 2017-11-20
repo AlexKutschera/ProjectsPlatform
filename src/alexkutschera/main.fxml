@@ -3,13 +3,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-
-<BorderPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alexkutschera.Controller">
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121"
+            fx:controller="alexkutschera.MainController">
     <center>
         <GridPane>
             <columnConstraints>
@@ -20,15 +16,16 @@
                 <RowConstraints/>
                 <RowConstraints/>
             </rowConstraints>
-            <TextField maxWidth="250.0" minWidth="150.0" prefWidth="200.0" promptText="Suchen"
+            <TextField fx:id="projects_search" maxWidth="250.0" minWidth="150.0" prefWidth="200.0" promptText="Suchen"
                        style="-fx-background-color: #FFFFFF;">
                 <padding>
                     <Insets bottom="8.0" left="8.0" right="8.0" top="8.0"/>
                 </padding>
             </TextField>
-            <ListView maxWidth="250.0" minWidth="150.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;"
-                      GridPane.rowIndex="1" GridPane.vgrow="ALWAYS"/>
-            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowSpan="2147483647"/>
+            <ListView fx:id="projects_list" maxWidth="250.0" minWidth="150.0" prefWidth="200.0"
+                      style="-fx-background-color: #FFFFFF;" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS"/>
+            <Pane fx:id="project_pane" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1"
+                  GridPane.rowSpan="2147483647"/>
         </GridPane>
     </center>
 </BorderPane>
