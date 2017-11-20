@@ -2,7 +2,7 @@
  * Copyright (c) 2017. AlexKutschera
  */
 
-package alexkutschera.projects.SampleProject;
+package alexkutschera.projects.sampleproject;
 
 import alexkutschera.ProjectPane;
 import javafx.scene.control.Label;
