@@ -27,8 +27,8 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         // init projects and add to projects list
-        projectPanes.add(new SampleProject());
-        projectPanes.add(new VolumeProject()); //TODO remove or replace with another Project
+        projectPanes.add(new SampleProject()); //TODO remove or replace with another Project
+        projectPanes.add(new VolumeProject());
 
         // init GUI
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
