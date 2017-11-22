@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  ~ 2017 Alexander Albers
+  ~ 2017 Alexander Albers //Todo Button
   -->
 
 <?import javafx.scene.layout.GridPane?>
@@ -10,7 +10,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
 <GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" hgap="8.0" vgap="8.0"
           xmlns="http://javafx.com/javafx/8.0.121"
           fx:controller="alexkutschera.projects.alexspielereien.TestController">
@@ -28,7 +27,6 @@
     <padding>
         <Insets bottom="2.0" left="2.0" right="2.0" top="5.0"/>
     </padding>
-    //TODO Button
     <TextField fx:id="txtBox" text="0" GridPane.columnIndex="1"/>
     <Label fx:id="lblAusgabe" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <padding>
