@@ -31,6 +31,8 @@ public class Test extends ProjectPane {
                     controller.lblAusgabe.setText("Hallo");
                 }
             });
+
+            // Button muss zum Pane hinzugefügt werden mit ...
             cmdReset = new Button("Reset");
             cmdReset.setOnAction(new EventHandler<ActionEvent>(){
                 @Override
@@ -39,6 +41,10 @@ public class Test extends ProjectPane {
                     controller.lblAusgabe.setText("");
                 }
             });
+            // ... this.getChildren().add(cmdReset);
+
+            // Um den Button im Gridpane zu positionieren musst du auch den Row-/ColumnConstraints eine
+            // ID geben und sie im Controller hinzufügen....
         } catch (IOException e) {
             e.printStackTrace();
         }
