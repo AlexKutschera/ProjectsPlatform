@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private static MainController controller;
+    public static MainController controller;
 
     private static ObservableList<ProjectPane> projectPanes = FXCollections.observableArrayList();
     private static FilteredList<ProjectPane> filtedProjectPanes = new FilteredList<>(projectPanes);
