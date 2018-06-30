@@ -4,7 +4,7 @@
 
 package alexkutschera;
 
-import alexkutschera.projects.alexspielereien.Test;
+import alexkutschera.projects.readwrite.ReadWrite;
 import alexkutschera.projects.sampleproject.SampleProject;
 import alexkutschera.projects.volumeproject.VolumeProject;
 import javafx.application.Application;
@@ -30,7 +30,7 @@ public class Main extends Application {
         // init projects and add to projects list
         projectPanes.add(new SampleProject()); //TODO remove or replace with another Project
         projectPanes.add(new VolumeProject());
-        projectPanes.add(new Test());
+        projectPanes.add(new ReadWrite());
 
         // init GUI
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
